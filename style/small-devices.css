@@ -5,12 +5,10 @@
     .site-branding h1 a img {
         height: 60px;
     }
-    .mid-section .container .row{
-        display: inline-block;
-    }
+  
     .exampleSearch{
         width: 100%;
-        margin: 0px 15px 0 0;
+        margin: 0px 15px 10px 0;
     }
     nav.whatsNew a{
         float: left;
@@ -65,4 +63,76 @@
         background-size: cover;
         padding: 60px 0 30px 0;
       }
+	  
+	  .primaryBg.main-nav {
+    background: none;
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
+
+.top-header {
+    display: none;
+}
+
+form.exampleSearch input[type="text"] {
+    padding: 8px 10px 8px 10px;
+    border: 1px solid #8da1b7;
+}
+
+form.exampleSearch button {
+    font-size: 20px;
+}
+
+.about-container_inner {
+    padding: 30px 20px 30px 5px;
+}
+
+.carousel-indicators {
+    bottom: -5%;
+}
+
+.carousel-item {
+    height: 230px;
+}
+
+.about-container_inner .col-sm-4 {
+    margin-bottom: 20px;
+}
+
+.main-nav .container {
+    padding: 0;
+}
+
+.megamenu .accessible-megamenu > .accessible-megamenu-top-nav-item a[aria-expanded] {
+    padding: 15px 20px;
+    font-size: 18px;
+}
+
+.megamenu .accessible-megamenu > .accessible-megamenu-top-nav-item a.fa.fa-home {
+    font-size: 20px;
+    padding: 18px 20px;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.jctkr-wrapper {
+    height: 40px;
+}
+
+.jctkr-wrapper ul li {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 9px 0;
+  color: #fff;
+}
+
+.txt-box p {
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
 }

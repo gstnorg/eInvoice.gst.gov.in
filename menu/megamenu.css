@@ -151,48 +151,17 @@ limitations under the License.
 .accessible-megamenu .accessible-megamenu-panel {
   position: absolute;
   display: block;
-  left: -2px;
   color: #454545;
   margin: 0;
-  padding: 2em 0em 1em 2em;
+  padding: 10px;
   line-height: normal;
   background-color: #fff;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(#fff),
-    to(#fff)
-  );
-  background-image: -moz-linear-gradient(top, #fff, #fff);
-  background-image: -ms-linear-gradient(top, #fff, #fff);
-  background-image: -o-linear-gradient(top, #fff, #fff);
-  cursor: default;
-  -webkit-box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.5), inset 1px 1px 0 #fff;
-  -moz-box-shadow: 0 4px 6px -2px -moz-rgba(0, 0, 0, 0.5), inset 1px 1px 0 #fff;
-  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.5), inset 1px 1px 0 #fff;
-
   visibility: hidden;
   top: -9999em;
   max-height: 0px;
   overflow: hidden;
   opacity: 0;
-  -webkit-transition: opacity 250ms ease 250ms, max-height 500ms ease,
-    visibility 0s linear 500ms, top 0s linear 500ms;
-  -moz-transition: opacity 250ms ease 250ms, max-height 500ms ease,
-    visibility 0s linear 500ms, top 0s linear 500ms;
-  -ms-transition: opacity 250ms ease 250ms, max-height 500ms ease,
-    visibility 0s linear 500ms, top 0s linear 500ms;
-  -o-transition: opacity 250ms ease 250ms, max-height 500ms ease,
-    visibility 0s linear 500ms, top 0s linear 500ms;
-  transition: opacity 250ms ease 250ms, max-height 500ms ease,
-    visibility 0s linear 500ms, top 0s linear 500ms;
 
-  border: 1px solid #edae49;
-  border-color: #edae49;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
 }
 
 .accessible-megamenu .accessible-megamenu-panel.open {
@@ -214,7 +183,7 @@ limitations under the License.
 }
 
 .accessible-megamenu .accessible-megamenu-panel a {
-  display: inline-block;
+  display: block;
   font-size: 0.92em;
   line-height: 1.5em;
   text-decoration: none;
@@ -226,22 +195,14 @@ limitations under the License.
 }
 
 .accessible-megamenu .accessible-megamenu-panel.cols-4 {
-  width: 1112px;
   background: #f0f7fc;
 }
 
-.accessible-megamenu .accessible-megamenu-panel.cols-4 > ol > li {
-  width: 22.5%;
-}
 
 .accessible-megamenu .accessible-megamenu-panel.cols-4b {
   width: 878px;
   left: -6.462em;
   border-top-left-radius: 3px;
-}
-
-.accessible-megamenu .accessible-megamenu-panel.cols-4b > ol > li {
-  width: 22%;
 }
 
 .accessible-megamenu .accessible-megamenu-panel.cols-3 {
@@ -275,12 +236,7 @@ limitations under the License.
 }
 
 .accessible-megamenu .accessible-megamenu-panel > ol > li {
-  float: left;
   display: block;
-  margin-right: 1em;
-  margin-bottom: 1em;
-  padding-left: 1em;
-  border-left: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .accessible-megamenu .accessible-megamenu-panel > ol > li:first-of-type {
@@ -305,9 +261,7 @@ limitations under the License.
 }
 
 .accessible-megamenu .accessible-megamenu-panel ol ol > li > a {
-  width: auto;
-  /* text-indent: -2.333em;
-  padding-left: 2.333em; */
+ display: black;
 }
 
 .accessible-megamenu .accessible-megamenu-panel a:hover,
