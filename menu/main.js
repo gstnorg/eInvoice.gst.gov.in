@@ -26,6 +26,8 @@ if (jQuery) {
             // hack so that the megamenu doesn't show flash of css animation after the page loads.
             setTimeout(function () {
                 $('body').removeClass('init');
+                $('.no-subMenu').removeClass('accessible-megamenu-top-nav-item');
+                
             }, 500);
            
         });

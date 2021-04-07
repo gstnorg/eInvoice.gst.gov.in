@@ -578,7 +578,7 @@ div.upcoming_container {
 }
 
 .container-link {
-    padding: 9px 15px;
+    padding: 6px 15px 5px;
     color: #3f7cac;
     border-bottom: 1px solid #fff;
 }
@@ -817,4 +817,69 @@ display: block;
     color: #fff;
     text-decoration: underline;
     margin-top: 2px;
+}
+
+#nt-example1 li:first-child {
+    border-radius: 5px 5px;
+}
+
+#nt-example1 li:last-child {
+    border-radius: 0 0 5px 5px;
+}
+
+.table thead th {
+    vertical-align: middle;
+}
+
+.footer-top .inline {
+    line-height: 20px !important;
+    display: inline-block;
+}
+
+.footer-bottom {
+    background: #0e3563;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.accessible-megamenu > .no-subMenu a .ride {
+  position: absolute;
+  border-left: 1px solid #577393;
+  height: 18px;
+  top: 1.2em;
+  left: -0.1em;
+}
+
+.accessible-megamenu > .no-subMenu {
+  position: static !important;
+}
+.accessible-megamenu > .no-subMenu {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: left;
+  color: #454545 !important;
+}
+
+
+.no-subMenu a {
+  position: relative;
+  display: block;
+  padding: 13px 22px;
+  color: #fff !important;
+  text-decoration: none;
+  z-index: inherit;
+  font-weight: 500;
+  font-size: .9em;
+}
+.no-subMenu.home a {
+
+  font-size: 1.1em;
+}
+.no-subMenu a:hover {
+
+  color: #edae49 !important;
 }
