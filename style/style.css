@@ -883,3 +883,6 @@ display: block;
 
   color: #edae49 !important;
 }
+.tickreader{
+  max-height: 27px !important;
+}
