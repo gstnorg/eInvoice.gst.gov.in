@@ -876,7 +876,8 @@ display: block;
 }
 .no-subMenu.home a {
 
-  font-size: 1.1em;
+  font-size: 1.4em;
+  padding-left: 8px;
 }
 .no-subMenu a:hover {
 
