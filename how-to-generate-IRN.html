@@ -77,8 +77,8 @@
             <ol class="accessible-megamenu js-accessible-megamenu">
               <li  class="no-subMenu home">
                 <h2>
-                  <a href="./index.html" role="button" tabindex="0" aria-hidden="true" class=" fa fa-home">
-                    <span  class="sr-only">Home</span>
+                  <a href="#" role="button" tabindex="0" aria-hidden="true" class=" fa fa-home"><span
+                      class="sr-only">Home</span><span class="ride"></span>
                   </a>
                 </h2>
                 
@@ -335,35 +335,44 @@
   <div class="upcoming_container_main">
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 section-tittle mb-3 pt-3">
           <h2>How to Generate IRN</h2>
-		  <p>    Through Integration via APIs:</p>
-       
+		  
+       </div>
+	   </div>
 <div class="row">
 <div class="col-md-12">
+ <h5>Through Integration via APIs:</h5><br>
+ <h6 class="dark-txt"><i>Taxpayers with Aggregate Turnover of < Rs. 500 Crores<br></i></h6><br>
+	
+    <p><strong><u>Through E-Way Bill APIs</u></strong> – If the taxpayer already has direct access to E-Way Bill APIs, then they can use the same Client Id, Client Secret, username and password to get access to e-Invoice system.</p>
     
-
-
-    <br><br>Taxpayers with Aggregate Turnover of < Rs. 500 Crores<br><br>
-    • Through E-Way Bill APIs – If the taxpayer already has direct access to E-Way Bill APIs, then they can use the same Client Id, Client Secret, username and password to get access to e-Invoice system.<br><br>
-    • Through GSPs – the taxpayer can connect through GSPs. In this case, the GSTIN generates their own username and password, ties up with GSPs to get access to e-invoice APIs using the Client ID and Client Secret of GSPs.<br><br>
-    • Through ERPs or Billing/Accounting Software Service Providers – the taxpayer can connect through select ERPs and Billing/Accounting Software Service Providers. In this case, the GSTIN generates their own username and password and ties up with ERPs or Billing/Accounting Software Service Providers, to get access to e-invoice APIs, using the Client ID and Client Secret of said providers.<br><br>  <br><br>• Through Entities having direct Access to APIs – If the taxpayer (e.g. certain automobile companies) has tie up or using the ERP of the entity which has direct access to API, then they can access e-invoice APIs through that entity. In this case, the GSTIN generates their own username and password and gets access to e-invoice APIs, using Client ID and Client Secret of the entity which has such access.<br><br>
-    Taxpayers with Aggregate Turnover of > Rs. 500 Crores<br><br>
-     In addition to above modes, they will have direct access, as follows:<br><br>
-    • Direct Access to API – They can get direct access to API to integrate with their ERP system. They need to whitelist their public IPs. In addition to username and password to each GSTIN of the entity, the entity gets the Client ID and Client Secret to get access to e-invoice APIs.
-   <br><br>Through Offline Utility / Bulk Generation Tool (Any Taxpayer):
-   <br><br>Some businesses may not have their own ERP/Accounting Software or have few invoices to report. For any other reason, they may not be able to integrate directly with IRP or not able to connect through GSPs/ERPs.<br><br>
-    Such taxpayers can download the free offline utility (‘bulk generation tool’) from e-invoice portal. In this utility, details of invoices can be entered and can be easily uploaded on IRP, for generation of IRN. While the portal gives back ‘machine-readable’ invoice in JSON format, there is also a facility to generate ‘human-readable’ PDF copy of invoice (for save/print/e-mail etc.).<br><br><br><br>After obtaining IRN, the invoice (with QR Code) can be issued to the recipient in the same way as is being done now. (Note: An integrated mechanism to enable system-to-system exchange of e-invoices will be made available in due course.)
-    <br> <br> <br> <br> <br> <br> <br>
+	 <p><strong><u>Through GSPs</u></strong> – the taxpayer can connect through GSPs. In this case, the GSTIN generates their own username and password, ties up with GSPs to get access to e-invoice APIs using the Client ID and Client Secret of GSPs.</p>
+	 
+    <p><strong><u>Through ERPs or Billing/Accounting Software Service Providers</u></strong> – the taxpayer can connect through select ERPs and Billing/Accounting Software Service Providers. In this case, the GSTIN generates their own username and password and ties up with ERPs or Billing/Accounting Software Service Providers, to get access to e-invoice APIs, using the Client ID and Client Secret of said providers.</p>
+	
+	<p><strong><u>Through Entities having direct Access to APIs</u></strong>  – If the taxpayer (e.g. certain automobile companies) has tie up or using the ERP of the entity which has direct access to API, then they can access e-invoice APIs through that entity. In this case, the GSTIN generates their own username and password and gets access to e-invoice APIs, using Client ID and Client Secret of the entity which has such access.</p>
+	<br>
+    <h6 class="dark-txt"><i>Taxpayers with Aggregate Turnover of > Rs. 500 Crores</i></h6><br>
+	
+     <p>In addition to above modes, they will have direct access, as follows:</p>
+	 
+    <p><strong><u>Direct Access to API</u></strong> – They can get direct access to API to integrate with their ERP system. They need to whitelist their public IPs. In addition to username and password to each GSTIN of the entity, the entity gets the Client ID and Client Secret to get access to e-invoice APIs.</p>
+	
+   <p><strong>Through Offline Utility / Bulk Generation Tool (Any Taxpayer):</strong></p>
+   <p>Some businesses may not have their own ERP/Accounting Software or have few invoices to report. For any other reason, they may not be able to integrate directly with IRP or not able to connect through GSPs/ERPs.</p>
+   
+    <p>Such taxpayers can download the free offline utility ('bulk generation tool') from e-invoice portal. In this utility, details of invoices can be entered and can be easily uploaded on IRP, for generation of IRN. While the portal gives back ‘machine-readable’ invoice in JSON format, there is also a facility to generate 'human-readable' PDF copy of invoice (for save/print/e-mail etc.).</p>
+	
+	<p>After obtaining IRN, the invoice (with QR Code) can be issued to the recipient in the same way as is being done now. (Note: An integrated mechanism to enable system-to-system exchange of e-invoices will be made available in due course.)</p>
+    
 </div>
 </div>
 
 	  
 		
         
-		</div>
-        
-      </div>
+		
     </div>
   </div>
 
@@ -495,13 +504,12 @@
   <script src="./script/jquery.jConveyorTicker.min.js"></script>
   <script src="./script/jquery.newsTicker.js"></script>
 
-  <script type="text/javascript" src="./assets/calender/js/caleandar.js"></script>
-  <script type="text/javascript" src="./assets/calender/js/date-settings.js"></script>
+ 
 
  
   <!-- <script src="https://code.highcharts.com/maps/modules/exporting.js"></script> -->
   <!-- <script src="https://code.highcharts.com/mapdata/countries/in/custom/in-all-disputed.js"></script> -->
-  <script src="//rawgithub.com/phpepe/highcharts-regression/master/highcharts-regression.js?8"></script>
+ 
  
 
   <script src="./menu/jquery-accessibleMegaMenu.js"></script>

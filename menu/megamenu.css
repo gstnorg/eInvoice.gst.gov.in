@@ -441,7 +441,9 @@ limitations under the License.
 
   .accessible-megamenu-toggle[aria-expanded="true"]
     ~ .accessible-megamenu
-    > .accessible-megamenu-top-nav-item {
+    > .accessible-megamenu-top-nav-item ,
+	.no-subMenu
+	{
     height: auto;
     overflow: visible;
     visibility: visible;
@@ -449,6 +451,9 @@ limitations under the License.
     background: #274c77;
     border-bottom: 2px solid #3f7cac;
   }
+  
+  
+  
 
   .accessible-megamenu {
     height: auto;
@@ -483,7 +488,7 @@ limitations under the License.
   }
 }
 
-@media (max-width: 452px) {
+@media (max-width: 640px) {
   .accessible-megamenu .accessible-megamenu-panel.cols-4 > ol > li,
   .accessible-megamenu .accessible-megamenu-panel.cols-4b > ol > li,
   .accessible-megamenu .accessible-megamenu-panel.cols-3 > ol > li,

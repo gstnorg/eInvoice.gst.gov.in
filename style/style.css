@@ -470,11 +470,14 @@ ul.breadcrumb li a:hover {
   border-color: #e59b24;
 }
 
+
+
 /* about continer end */
 
 /* upcoming container start*/
 .upcoming_container_main {
-  padding: 20px 0;
+    padding: 20px 0;
+    clear: both;
 }
 .upcoming_container_main .upcoming_container {
   min-width: 180px;
@@ -883,6 +886,67 @@ display: block;
 
   color: #edae49 !important;
 }
-.tickreader{
-  max-height: 27px !important;
+
+
+.update-news ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.update-news li {
+    width: 100%;
+    float: left;
+    margin: 10px 0;
+    border: 1px solid #1b4c8340;
+    border-radius: 3px;
+}
+
+.update-news .date {
+    background: #1b4c8340;
+    display: inline-block;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 2px;
+	position: relative;
+	float: left;
+	font-weight: 500;
+}
+
+
+
+.update-news .date:after {
+    content: "";
+    position: absolute;
+    border-left: 10px solid #1b4c8340;
+    border-bottom: 8px solid transparent;
+    right: -10px;
+    top: 10px;
+    border-top: 8px solid transparent;
+}
+
+.date-content {
+    float: left;
+    margin-left: 20px;
+    font-size: 14px;
+    padding: 8px 0;
+}
+
+.section-tittle h2 {
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+p strong {
+    font-weight: 500;
+}
+
+.dark-txt i {
+    color: #274c77;
+}
+
+.gst-provider-table td:nth-child(1) {
+    text-align: center;
 }
