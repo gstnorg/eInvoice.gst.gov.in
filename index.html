@@ -53,8 +53,8 @@
               </nav>
             </div>
           </div>
-          <form class="exampleSearch" action="/action_page.php">
-            <input class="rounded-left" type="text" placeholder="Search.." name="search2" />
+          <form id="eInvoiceSearch" class="exampleSearch" action="/action_page.php">
+            <input id="eInvoiceQuery" class="rounded-left" type="text" placeholder="Search.." name="search2" />
             <button class="rounded-right" type="submit"><i class="fa fa-search"></i></button>
             <br />
 
@@ -695,8 +695,8 @@
   <script src="./script/jquery.jConveyorTicker.min.js"></script>
   <script src="./script/jquery.newsTicker.js"></script>
 
-  <script type="text/javascript" src="./assets/calender/js/caleandar.js"></script>
-  <script type="text/javascript" src="./assets/calender/js/date-settings.js"></script>
+  <!-- <script type="text/javascript" src="./assets/calender/js/caleandar.js"></script>
+  <script type="text/javascript" src="./assets/calender/js/date-settings.js"></script> -->
 
 
   <!-- <script src="https://code.highcharts.com/maps/modules/exporting.js"></script> -->
@@ -714,11 +714,20 @@
         reverse_elm: false, // Enable the use of the reverse animation trigger HTML element
         force_loop: false // Force the initialization even if the items are too small in total width
       });
-      //$("#nt-example1").newsTicker({
-      //  row_height: 40,
-      //  max_rows: 5,
-      //   duration: 4000
-      //  });
+      //search
+      const f = document.getElementById('eInvoiceSearch');
+      const q = document.getElementById('eInvoiceQuery');
+      const google = 'https://www.google.com/search?q=';
+      const site = 'gstn.org';
+
+      function submitted(event) {
+        event.preventDefault();
+        const url = google + q.value;
+        const win = window.open(url, '_blank');
+        win.focus();
+      }
+
+      f.addEventListener('submit', submitted);
     });
   </script>
 
