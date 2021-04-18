@@ -135,4 +135,15 @@ button:focus {
     font-size: 15px;
 }
 
+.footer-links {
+    width: 100%;
+    padding: 0 15px;
 }
+
+.footer-bottom .text-right {
+    text-align: left !important;
+    margin-top: 10px;
+}
+
+}
+

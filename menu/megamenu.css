@@ -369,9 +369,7 @@ limitations under the License.
 }
 
 @media (max-width: 920px) {
-  .accessible-megamenu > .accessible-megamenu-top-nav-item {
-    position: static;
-  }
+ 
 
   .accessible-megamenu .accessible-megamenu-panel.cols-4,
   .accessible-megamenu .accessible-megamenu-panel.cols-4b,
@@ -386,11 +384,6 @@ limitations under the License.
     max-height: inherit;
   }
 
-  .accessible-megamenu .accessible-megamenu-panel.cols-4 > ol > li,
-  .accessible-megamenu .accessible-megamenu-panel.cols-4b > ol > li,
-  .accessible-megamenu .accessible-megamenu-panel.cols-3 > ol > li {
-    width: 44%;
-  }
 
   .accessible-megamenu .accessible-megamenu-panel.cols-1 > ol > li {
     width: 100%;
@@ -400,12 +393,7 @@ limitations under the License.
     min-height: 256px;
   }
 
-  .accessible-megamenu .accessible-megamenu-panel > ol > li {
-    float: left;
-    display: block;
-    margin-right: 1em;
-    margin-bottom: 1em;
-  }
+
 
   .accessible-megamenu
     .accessible-megamenu-panel.cols-4
@@ -503,8 +491,24 @@ limitations under the License.
     border-left: none;
     box-shadow: none;
   }
+  
+  span.white_logo {
+    margin-left: 20px;
+    position: absolute;
+    top: -53px;
+    right: 57px;
+}
+  
 }
 
-.accessible-megamenu > .accessible-megamenu-top-nav-item {
-  position: static !important;
+@media (min-width: 641px) and (max-width: 1100px)  {
+.main-nav .container {
+    max-width: 100%;
+}
+
+.megamenu .accessible-megamenu > .accessible-megamenu-top-nav-item a {
+    padding: 15px 10px !important;
+    font-size: 12px;
+}
+
 }
