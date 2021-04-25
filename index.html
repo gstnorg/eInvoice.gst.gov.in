@@ -54,13 +54,20 @@
             </div>
           </div>
           <form class="exampleSearch" action="/action_page.php">
-                        <input class="rounded-left" type="text" placeholder="Search.." name="search2" />
+                        <input onkeyup="filterFunction()" id="myInput" class="rounded-left" type="text" placeholder="Search.." name="search2" />
                         <button class="rounded-right" type="submit"><i class="fa fa-search"></i></button>
-                        <br />
-						<span class="white_logo"><img src="images/logo_white.png" /></span>
+						<div id="dropdown-field" class="dropdown-field">
+	<a href="#about">About</a>
+    <a href="#base">Base</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+    <a href="#custom">Custom</a>
+    <a href="#support">Support</a>
+    <a href="#tools">Tools</a>
+	 </div>
                     </form>
-		 
-          <div class="clearfix"></div>
+	
+         <span class="white_logo"><img src="images/logo_white.png" /></span>
  
         </div>
       </div>
@@ -741,6 +748,27 @@
 
       f.addEventListener('submit', submitted);
     });
+  </script>
+  
+  <script>
+  function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("dropdown-field");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+  $('.dropdown-field').show();
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+	  $('.dropdown-field').hide();
+    } else {
+      a[i].style.display = "none";
+	  
+    }
+  }
+}
   </script>
 
 </body>

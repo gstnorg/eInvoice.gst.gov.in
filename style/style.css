@@ -52,12 +52,13 @@
 }
 
 .exampleSearch {
-  float: right;
-  margin: 5px 0 0 0;
-  width: 70%;
-  clear: both;
-  display: flex;
-  justify-content: flex-end;
+    float: right;
+    margin: 5px 0 0 0;
+    width: 65%;
+    clear: both;
+    display: flex;
+    position: relative;
+    right: 40px;
 }
 
 form.exampleSearch input[type="text"] {
@@ -607,10 +608,24 @@ div.upcoming_container {
   margin-top: 0em;
 }
 #nt-example1 li {
-  background: #ecf2fc;
-  overflow: hidden;
-  padding: 5px 10px;
-  margin-bottom: 5px;
+    background: #ecf2fc;
+    overflow: hidden;
+    padding: 5px 10px 5px 45px;
+    margin-bottom: 5px;
+    position: relative;
+    height: 64px;
+}
+
+
+
+#nt-example1 li:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    border-left: 33px solid #d0e0e6;
+    border-top: 33px solid transparent;
+    border-bottom: 33px solid transparent;
 }
 
 #nt-example1 li:hover {
@@ -942,7 +957,13 @@ p strong {
 }
 
 span.white_logo {
-    margin-left: 20px;
+    position: absolute;
+    width: 65px;
+    background: #fff;
+    height: 86px;
+    top: 0;
+    right: 0;
+    text-align: center;
 }
 
 .table thead th {
@@ -1020,6 +1041,8 @@ span.white_logo {
 
 .white_logo img {
     max-width: 50px;
+    padding-top: 25px;
+    margin: 0 auto;
 }
 
 :focus-visible,
@@ -1032,4 +1055,22 @@ button:focus {
     max-width: 600px;
     display: block;
     margin: 0 auto;
+}
+
+.dropdown-field {
+	display: none;
+    background: #fff;
+    position: absolute;
+    width: 200px;
+    top: 32px;
+    left: 0;
+    z-index: 11;
+    border-radius: 0 0 5px 5px;
+}
+
+.dropdown-field a {
+    display: block;
+    color: #333;
+    padding: 5px 10px;
+    font-size: 15px;
 }
