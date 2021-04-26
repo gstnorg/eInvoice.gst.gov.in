@@ -129,7 +129,7 @@ nav.whatsNew a {
   margin-top: 7px;
 }
 .tickreader {
-  background-color: #782a38;
+  background-color: #fdd9d3;
 }
 ul.breadcrumb {
   padding: 5px 16px;
@@ -702,6 +702,9 @@ div.upcoming_container {
     color: #fff;
     text-align: left;
     padding: 0 !important;
+}
+.carousel-caption h4, .carousel-caption p, .about-container_inner h4{ 
+  color: #000;
 }
 .carousel-item{ height: 200px; width: 100%;}
 .carousel-item img{ height: 175px; width: 100%;}
