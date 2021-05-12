@@ -53,8 +53,9 @@
             </div>
           </div>
     <form class="exampleSearch">
-    <input onkeyup="filterFunction()" id="myInput" class="rounded-left" type="text" placeholder="Search.." name="search2" />
-    <button class="rounded-right" type="submit"><i class="fa fa-search"></i></button>
+      <span class="error-msg hidden">This field is required</span>
+      <input onkeyup="filterFunction()" id="myInput" class="rounded-left" type="text" placeholder="Search.."
+        name="search2" />    <button class="rounded-right" id="search-btn" type="button"><i class="fa fa-search"></i></button>
     <div id="dropdown-field" class="dropdown-field">
   	<a target="_blank" href="https://einvoice1.gst.gov.in/">IRP-1 (NIC)</a>
     <a target="_blank" href="https://einvoice1-trial.nic.in/">Trial/Testing Portal-1 (NIC)</a>
@@ -115,13 +116,9 @@
             </button>
             <ol class="accessible-megamenu js-accessible-megamenu">
               <li class="accessible-megamenu-top-nav-item home">
-                <h2>
-                  <a href="./index.html" role="button" tabindex="0" aria-hidden="true" class=" fa fa-home">
-                    <span class="sr-only">Home</span>
-                  </a>
-                </h2>
-                <div class="cols-4 accessible-megamenu-panel" style="display:none;"></div>
-
+                <a href="./index.html" class="fa fa-home"><span class="sr-only">Home</span>
+                  <span class="activeborder"></span><span class="ride"></span>
+                </a>
               </li>
               <li class="accessible-megamenu-top-nav-item">
                 <h2>
@@ -164,7 +161,7 @@
                   <ol>
                     <li class="accessible-megamenu-panel-group">
 
-                      <a target="_blank" href="https://www.gstn.org.in/einvoice-faqs">FAQs</a>
+                      <a target="_blank" href="./downloads/GST e-invoice System - FAQs - Version 1.4 Dt. 30-3-2021.pdf">FAQs</a>
 
                     </li>
                     <li class="accessible-megamenu-panel-group">

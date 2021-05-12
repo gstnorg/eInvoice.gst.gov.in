@@ -599,6 +599,14 @@ div.upcoming_container {
   color: #fff;
 }
 
+span.error-msg {
+  position: absolute;
+  bottom: -18px;
+  font-size: 11px;
+  color: #dc3545;
+  left: 6px;
+  font-weight: 600;
+}
 
 .topics .container-link:last-child{
   border-radius: 0px 0px 5px 5px;

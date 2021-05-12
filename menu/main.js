@@ -36,3 +36,14 @@ function filterFunction() {
       }
     }
   }
+
+  
+  $('#search-btn').click(function(){
+    var searchValue = document.getElementById('myInput').value;
+    if(searchValue != ''){
+      $('.error-msg').addClass('hidden');
+    }
+    else{
+      $('.error-msg').removeClass('hidden');
+    }
+  });
