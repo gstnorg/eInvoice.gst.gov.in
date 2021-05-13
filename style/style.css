@@ -402,6 +402,7 @@ ul.breadcrumb li a:hover {
   height: 20px;
   width: 20px;
   line-height: 12px;
+  padding: 4px 3px;
 }
 
 #footer {
@@ -856,7 +857,7 @@ display: block;
 .about-container_inner .view-more {
     float: right;
     font-size: 11px;
-    color: #782a38;
+    color: #fff;
     text-decoration: underline;
     margin-top: 2px;
 }
