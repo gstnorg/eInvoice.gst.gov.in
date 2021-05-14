@@ -410,6 +410,8 @@ ul.breadcrumb li a:hover {
   font-size: 14px;
 }
 
+
+
 .sidebanner img {
   width: 100%;
 }
@@ -448,7 +450,7 @@ background-position: -75px -100px;
   font-size: 14px;
 }
 .about-container_inner a {
-     font-size: 14px;
+     font-size: 13px;
     font-weight: 400;
     color: #3f7cac;
 	display: block;
@@ -598,6 +600,8 @@ div.upcoming_container {
 
 .container-link a {
   color: #fff;
+  font-weight: bold;
+  font-style: italic;
 }
 
 span.error-msg {
@@ -655,7 +659,7 @@ span.error-msg {
   line-height: 18px;
   font-size: 14px;
   text-align: left;
-  color: #3f7cac;
+  color: #274c77;
   display: block;
 }
 #nt-example1 li a span {
@@ -848,18 +852,18 @@ display: block;
 }
 
 .txt-date {
-	color: #d69904;
-	font-size: 13px;
-	font-weight: 400;
-	float: right;
+  color: #5d4406;
+  font-size: 14px;
+  font-weight: bold;
+  float: right;
+  margin-top: -5px;
 }
 
 .about-container_inner .view-more {
     float: right;
-    font-size: 11px;
+    font-size: 12px;
     color: #fff;
     text-decoration: underline;
-    margin-top: 2px;
 }
 
 #nt-example1 li:first-child {
@@ -942,21 +946,19 @@ display: block;
     border-bottom: 1px solid #1b4c8340;
 }
 
-   .update-news .date {
-    display: inline-block;
-    font-size: 12px;
-    padding: 18px 0 0 0;
-    position: relative;
-    float: right;
-    color: #adb5bd;
-    font-weight: 500;
-
+.update-news .date {
+  font-size: 14px;
+  padding: 18px 0 0 0;
+  position: relative;
+  float: right;
+  color: #757b82;
+  font-weight: 700;
 }
 
 
 .date-content {
     float: left;
-    font-size: 14px;
+    font-size: 15px;
     padding: 8px 0;
 }
 
@@ -982,11 +984,11 @@ span.white_logo {
   position: absolute;
   width: 65px;
   background: #fff;
-  height: 45px;
+  height: 50px;
   top: 0;
   right: 0;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 18px;
   border-radius: 5px;
 }
 
@@ -1096,4 +1098,29 @@ button:focus {
     color: #333;
     padding: 5px 10px;
     font-size: 15px;
+}
+
+
+
+.notification-table td, .notification-table th {
+  text-align: left;
+}
+
+.notification-table td:nth-child(1) {
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+span.dot {
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  background: #212529;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.notification-table td:nth-child(1) a {
+  text-decoration: underline;
 }
