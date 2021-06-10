@@ -785,6 +785,8 @@ background: #3f7cac;
 }
 .impt_links div div p a.alink:first-child{
   border-right: 1px solid #fff;
+  text-decoration: none;
+  cursor: auto;
 }
 .impt_links div div p a{
 display: block;
@@ -1123,4 +1125,13 @@ span.dot {
 
 .notification-table td:nth-child(1) a {
   text-decoration: underline;
+}
+
+span.errorMsg {
+    font-size: 12px;
+    color: red;
+}
+
+.btn-warning:hover {
+    color: #fff;
 }
