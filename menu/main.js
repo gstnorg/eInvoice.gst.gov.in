@@ -12,7 +12,8 @@ if (jQuery) {
         $('.no-subMenu').removeClass('accessible-megamenu-top-nav-item');
 
       }, 500);
-
+    
+      $(".site-branding ").addClass("notranslate");
     });
 
   }(jQuery));

@@ -37,8 +37,11 @@
               </nav>
             </div>
           </div>
-          
-          <span class="white_logo"><img src="images/logo_white.png" /></span>
+          <span class="white_logo">
+            <img src="images/logo_white.png" />
+            <span style="display: none;" class="lang">
+          </span>
+
         </div>
       </div>
     </div>

@@ -115,13 +115,24 @@
               <textarea class="form-control" id="feedFormControlTextarea1" name="feedFormControlTextarea1" rows="3" placeholder="Please specify in 300 characters or less"></textarea>
 			        <span class="errorMsg hidden">This field is required</span>
             </div>
+            <div class="form-group">
+            <div class="g-recaptcha" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"></div>
+            </div>
+            <div class="form-group">
+            <div id="inline-badge"></div>
+
+<script src="https://www.google.com/recaptcha/api.js?render=explicit&onload=onRecaptchaLoadCallback"></script>
+            </div>
           </form>
         </div>
         <div class="modal-footer">
           <button type="button" id="closepopup" onclick="return emptyDataClose()" class="btn btn-secondary" data-dismiss="modal">
             Close
           </button>
-          <button type="button" id="submitData" onclick="return sendEmail();" class="btn report_btn btn-primary btn-warning">
+          <button class="g-recaptcha" 
+        data-sitekey="reCAPTCHA_site_key" 
+        data-callback='onSubmit' 
+        data-action='submit' id="submitData" onclick="return sendEmail();" class="btn report_btn btn-primary btn-warning">
             Report an Issue
           </button>
         </div>
@@ -136,7 +147,39 @@
   <script src="./script/jquery.newsTicker.js"></script>
   <script src="./menu/jquery-accessibleMegaMenu.js"></script>
   <script src="./menu/main.js"></script>
+  <!-- <script src="https://www.google.com/recaptcha/api.js?render=6LefIDsbAAAAACCozqOInw-aXRK1jsoVgd8blcKb"></script> -->
+
   <script>
+
+<script>
+    function onRecaptchaLoadCallback() {
+        var clientId = grecaptcha.render('inline-badge', {
+            'sitekey': '6LefIDsbAAAAACCozqOInw-aXRK1jsoVgd8blcKb',
+            'badge': 'inline',
+            'size': 'invisible'
+        });
+
+        grecaptcha.ready(function() {
+            grecaptcha.execute(clientId, {
+                    action: 'post'
+                })
+                .then(function(token) {
+                    console.log(token)
+                });
+        });
+    }
+</script>
+      // function onClick(e) {
+      //   e.preventDefault();
+      //   grecaptcha.ready(function() {
+      //     grecaptcha.execute('6LefIDsbAAAAACCozqOInw-aXRK1jsoVgd8blcKb', {action: 'submit'}).then(function(token) {
+      //         console.log("hi")
+      //     });
+      //   });
+      // }
+
+
+
   function sendEmail(){
     var subject = $("#sellist1").val();
   var message = $("#feedFormControlTextarea1").val();

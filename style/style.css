@@ -1135,3 +1135,31 @@ span.errorMsg {
 .btn-warning:hover {
     color: #fff;
 }
+
+.goog-logo-link{
+  display: none !important;
+}
+.languages{
+  position: relative;
+}
+.goog-te-combo{
+  position: absolute;
+  width: 125px;
+  height: 30px;
+  left: -60px;
+  border-radius: 5px;
+  background: #267ba0;
+  color: #fff;
+
+}
+body{
+  top: 0 !important;
+}
+body > .skiptranslate{
+  display:none !important;
+}
+#google_translate_element{
+  margin-top: 35px;
+  z-index: 99;
+  position: relative;
+}

@@ -22,9 +22,13 @@ if(isset($_POST['subject']) && isset($_POST['message'])){
     $mail->SetFrom("einvoice.gov@gmail.com", "e-Invoice Feedback");
     $mail->Subject = "Issue Raised by e-Invoice website User";
     //$mail->Body = "hello";
-    $mail->AddAddress("varunkumarmca@gmail.com");
-    $mail->AddAddress("varun.ncrmail@gmail.com");
-    $mail->AddAddress("varun.kumar@gstn.org.in");//Replace here to address to whom message need be sent
+    // $mail->AddAddress("manisha.malik@gstn.org.in");
+    // $mail->AddAddress("ravi.edara@gstn.org.in");
+    // $mail->AddAddress("kapil.joshi@gstn.org.in");
+    // $mail->AddAddress("varun.kumar@gstn.org.in");
+    // $mail->AddAddress("e-invoice@gstn.org.in");
+       $mail->AddAddress("varun.ncrmail@gmail.com");
+
     $body = "<br> We have received the following information:<br><br>";
     $body .= "Issue : " . $subject . "<br><br>";
     $body .= "Description : " . $message ."<br><br>";

@@ -21,7 +21,7 @@
         <div class="col-md-6 col-xs-12 col-sm-12">
           <div class="site-branding ">
             <h1>
-              <a href="index.html"><img src="images/Emblem_of_India-white.svg" />e-Invoice
+              <a href="index.php"><img src="images/Emblem_of_India-white.svg" />e-Invoice
               </a>
             </h1>
           </div>
@@ -37,7 +37,10 @@
               </nav>
             </div>
           </div>
-          <span class="white_logo"><img src="images/logo_white.png" /></span>
+          <span class="white_logo">
+            <img src="images/logo_white.png" />
+            <span style="display: none;" class="lang">
+          </span>
         </div>
       </div>
     </div>
