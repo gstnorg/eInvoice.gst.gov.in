@@ -21,7 +21,7 @@
         <div class="col-md-6 col-xs-12 col-sm-12">
           <div class="site-branding ">
             <h1>
-              <a href="index.php"><img src="images/Emblem_of_India-white.svg" />e-Invoice
+              <a href="index.php"><img src="images/Emblem_of_India-white.svg" alt="Indian Government Logo" />e-Invoice
               </a>
             </h1>
           </div>
@@ -38,7 +38,7 @@
             </div>
           </div>
           <span class="white_logo">
-            <img src="images/logo_white.png" />
+            <img src="images/logo_white.png" alt="GSTN logo" />
             <span style="display: none;" class="lang">
           </span>
 

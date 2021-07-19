@@ -317,7 +317,7 @@ ul.breadcrumb li a:hover {
   text-decoration: none;
 }
 
-.fa-youtube {
+.fa-youtube-play {
   background: #bb0000;
   color: white;
   padding: 5px;
@@ -403,6 +403,7 @@ ul.breadcrumb li a:hover {
   width: 20px;
   line-height: 12px;
   padding: 4px 3px;
+  float: left;
 }
 
 #footer {
@@ -1162,4 +1163,21 @@ body > .skiptranslate{
   margin-top: 35px;
   z-index: 99;
   position: relative;
+}
+#cpatchaTextBox{
+  border: 1px solid #ced4da;
+  padding:10px;
+  border-radius: 5px;
+}
+#captchaInvalid{
+  color: red;
+    font-size: 12px;
+    display: block;
+    padding-top: 12px;;
+}
+.hiddenLink {
+  color: transparent;
+  user-select: none;
+  position: absolute;
+  top: -60px;
 }

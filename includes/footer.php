@@ -57,12 +57,13 @@
               <li><span><strong>Follow us:</strong> </span></li>
               <li class="social">
                 <a target="_blank" href="https://www.facebook.com/Goods-and-Services-Tax-1674179706229522/?fref=ts"
-                  class="fa fa-facebook"></a>
-                <a target="_blank" href="https://twitter.com/Infosys_GSTN" class="fa fa-twitter"></a>
+                  class="fa fa-facebook"><span class="hiddenLink">Facebook link</span></a>
+                <a target="_blank" href="https://twitter.com/Infosys_GSTN" class="fa fa-twitter">
+                <span class="hiddenLink">Twitter link</span></a>
                 <a target="_blank" href="https://www.linkedin.com/company/gstn-official/about/?viewAsMember=true"
-                  class="fa fa-linkedin"></a>
+                  class="fa fa-linkedin"><span class="hiddenLink">linkedin link</span></a>
                 <a target="_blank" href="https://www.youtube.com/channel/UCFYpOk92qurlO5t-Z_y-bOQ"
-                  class="fa fa-youtube-play"></a>
+                  class="fa fa-youtube-play"><span class="hiddenLink">youtube link</span></a>
               </li>
             </ul>
           </div>
@@ -112,27 +113,24 @@
             </div>
             <div class="form-group">
               <label for="exampleFormControlTextarea1">Description</label>
-              <textarea class="form-control" id="feedFormControlTextarea1" name="feedFormControlTextarea1" rows="3" placeholder="Please specify in 300 characters or less"></textarea>
+              <textarea class="form-control" id="feedFormControlTextarea1" name="feedFormControlTextarea1" rows="3" placeholder="Description"></textarea>
 			        <span class="errorMsg hidden">This field is required</span>
             </div>
             <div class="form-group">
             <div class="g-recaptcha" data-sitekey="6Lel4Z4UAAAAAOa8LO1Q9mqKRUiMYl_00o5mXJrR"></div>
             </div>
-            <div class="form-group">
-            <div id="inline-badge"></div>
-
-<script src="https://www.google.com/recaptcha/api.js?render=explicit&onload=onRecaptchaLoadCallback"></script>
-            </div>
+            <div class="form-group row"> 
+            <div class="col-md-2"><span id="captcha"></span></div>
+            <div class="col-md-5"><input type="text" placeholder="Type Captcha here" id="cpatchaTextBox"/></div>
+            <div class="col-md-5"><span id="captchaInvalid">Invalid Captcha</span></div>
+    
           </form>
         </div>
         <div class="modal-footer">
           <button type="button" id="closepopup" onclick="return emptyDataClose()" class="btn btn-secondary" data-dismiss="modal">
             Close
           </button>
-          <button class="g-recaptcha" 
-        data-sitekey="reCAPTCHA_site_key" 
-        data-callback='onSubmit' 
-        data-action='submit' id="submitData" onclick="return sendEmail();" class="btn report_btn btn-primary btn-warning">
+          <button id="submitData" onclick="return sendEmail();" class="btn report_btn btn-primary btn-warning">
             Report an Issue
           </button>
         </div>
@@ -150,37 +148,53 @@
   <!-- <script src="https://www.google.com/recaptcha/api.js?render=6LefIDsbAAAAACCozqOInw-aXRK1jsoVgd8blcKb"></script> -->
 
   <script>
+var code;
+function createCaptcha() {
+  //clear the contents of captcha div first 
+  document.getElementById('captcha').innerHTML = "";
+  var charsArray =
+  "0123456789&";
+  var lengthOtp = 4;
+  var captcha = [];
+  for (var i = 0; i < lengthOtp; i++) {
+    //below code will not allow Repetition of Characters
+    var index = Math.floor(Math.random() * charsArray.length + 1); //get the next character from the array
+    if (captcha.indexOf(charsArray[index]) == -1)
+      captcha.push(charsArray[index]);
+    else i--;
+  }
+  
+  var canv = document.createElement("canvas");
+  canv.id = "captcha";
+  canv.width = 70;
+  canv.height = 50;
+  var ctx = canv.getContext("2d");
+  ctx.font = "24px Georgia";
+  ctx.strokeText(captcha.join(""), 0, 30);
+  //storing captcha so that can validate you can save it somewhere else according to your specific requirements
+  code = captcha.join("");
+  document.getElementById("captcha").appendChild(canv); // adds the canvas to the body element
 
-<script>
-    function onRecaptchaLoadCallback() {
-        var clientId = grecaptcha.render('inline-badge', {
-            'sitekey': '6LefIDsbAAAAACCozqOInw-aXRK1jsoVgd8blcKb',
-            'badge': 'inline',
-            'size': 'invisible'
-        });
+}
+function validateCaptcha() {
 
-        grecaptcha.ready(function() {
-            grecaptcha.execute(clientId, {
-                    action: 'post'
-                })
-                .then(function(token) {
-                    console.log(token)
-                });
-        });
-    }
-</script>
-      // function onClick(e) {
-      //   e.preventDefault();
-      //   grecaptcha.ready(function() {
-      //     grecaptcha.execute('6LefIDsbAAAAACCozqOInw-aXRK1jsoVgd8blcKb', {action: 'submit'}).then(function(token) {
-      //         console.log("hi")
-      //     });
-      //   });
-      // }
+  if (document.getElementById("cpatchaTextBox").value == code) {
+    $('#captchaInvalid').hide();
+  }else{
+    $('#captchaInvalid').show();
+    return;
+  }
+}
 
 
 
   function sendEmail(){
+    if (document.getElementById("cpatchaTextBox").value == code) {
+    $('#captchaInvalid').hide();
+  }else{
+    $('#captchaInvalid').show();
+    return;
+  }
     var subject = $("#sellist1").val();
   var message = $("#feedFormControlTextarea1").val();
     if(message == "" ){
@@ -213,11 +227,14 @@
     })
  }
 
-  //}
+ createCaptcha();
 }
 
 
 $(function () {
+  createCaptcha();
+  $('#captchaInvalid').hide();
+
   //  location.reload(true);
   $("#closepopup").click(function () {
     $('#myFormReport').show();
