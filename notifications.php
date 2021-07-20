@@ -117,7 +117,7 @@
 </tr>
 <tr>
   <td><a target="_blank" href="https://www.cbic.gov.in/resources/htdocs-cbec/gst/notfctn-70-central-tax-english-2019.pdf">of 70/2019 Dt. 13-12-2019)</a></td>
-  <td>whose aggregate turnover in a financial year exceeds Rs. 100 Cr., as a class of registered person who shall prepare invoice and other prescribed documents, in terms of sub-rule (4) of rule 48 of CGCT Rules, 2017, in respect of supply of goods or services or both to a registered person.
+  <td>whose aggregate turnover in a financial year exceeds Rs. 100 Cr., as a class of registered person who shall prepare invoice and other prescribed documents, in terms of sub-rule (4) of rule 48 of CGST Rules, 2017, in respect of supply of goods or services or both to a registered person.
     <br>
     <strong>(Further amended by <a target="_blank" href="https://www.cbic.gov.in/resources/htdocs-cbec/gst/notfctn-61-central-tax-english-2020.pdf"><u>61/2020 Dt. 30-7-2020)</u></a></strong>
   </td>

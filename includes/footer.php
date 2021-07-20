@@ -52,7 +52,7 @@
               <li><a target="_blank" href="https://selfservice.gstsystem.in/">Log your grievance</a></li>
               <li>
                 <a target="_blank" href="#" data-toggle="modal" data-target="#exampleModal">Report an issue on this
-                  page</a>
+                  website</a>
               </li>
               <li><span><strong>Follow us:</strong> </span></li>
               <li class="social">

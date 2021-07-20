@@ -89,7 +89,7 @@
 <p>The standard format for e-invoice was notified as 'INV-01'. This format (called ‘schema’) facilitates seamless exchange of invoices between accounting systems of suppliers and buyers in an integrated electronic format.</p>
 <h4>C. e-invoice – Advantages:</h4>
 <p>e-invoice has many advantages for businesses such as Auto-reporting of invoices into GST return, auto-generation of e-way bill (where required). </p>
-<p>e-invoicing will also facilitate <i>standardisation and inter-operability leading to reduction of disputes among transacting parties, improve payment cycles, reduction of processing costs and thereby greatly improving overall business efficiency.</i> </p>
+<p>e-invoicing will also facilitate <i>standardisation and interoperability leading to reduction of disputes among transacting parties, improve payment cycles, reduction of processing costs and thereby greatly improving overall business efficiency.</i> </p>
 <h4>D. e-invoice – Applicability:</h4>
 <p>The documents presently covered by 'e-invoice' system are: Invoices, Credit Notes and Debit Notes, issued by notified class of taxpayers to registered persons (B2B) and for exports. Though different documents are covered, for ease of reference and understanding, the system is referred as 'e-invoicing'.</p>
 <p>Certain classes of registered persons have been exempted from issuing e-invoices, viz. <i>Special Economic Zone Units, insurer or a banking company or a financial institution, including a non-banking financial company, goods transport agency supplying services in relation to transportation of goods by road in a goods carriage, Suppliers of passenger transportation service, Suppliers of services by way of admission to exhibition of cinematograph films in multiplex screens.</i></p>

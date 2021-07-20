@@ -95,7 +95,7 @@
                   <p>
                     Auto-reporting of invoices into GST return<br>
                     Auto-generation of e-way bill (where required)<br>
-                    Standardisation and inter-operability <br>
+                    Standardisation and interoperability <br>
                     Reduction of disputes among transacting parties,
                   </p>
                   <p>
