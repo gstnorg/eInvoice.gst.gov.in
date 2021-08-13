@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <script type="text/javascript">
+        var tableToExcel = (function() {
+          var uri = 'data:application/vnd.ms-excel;base64,'
+            , template = '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><head><!--[if gte mso 9]><xml><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet><x:Name>{worksheet}</x:Name><x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions></x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml><![endif]--></head><body><table>{table}</table></body></html>'
+            , base64 = function(s) { return window.btoa(unescape(encodeURIComponent(s))) }
+            , format = function(s, c) { return s.replace(/{(\w+)}/g, function(m, p) { return c[p]; }) }
+          return function(table, name) {
+            if (!table.nodeType) table = document.getElementById(table)
+            var ctx = {worksheet: name || 'Worksheet', table: table.innerHTML}
+            window.location.href = uri + base64(format(template, ctx))
+          }
+        })()
+        </script>
+
+<div class="container">
+  <h2>e-Invoice website Change Request log</h2>
+  <input type="button" onclick="tableToExcel('testTable', 'Change Request Log')" value="Export to Excel" style="float:right; margin-bottom: 10px;">
+  <table class="table table-bordered" id="testTable" >
+    <thead>
+      <tr>
+        <th>Serial Number</th>
+        <th>Version</th>
+        <th>Change Request Date</th>
+        <th>Change Request Title</th>
+        <th>Description</th>
+        <th>Approved By</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>001</td>
+        <td>1.0</td>
+        <td>20/08/2021</td>
+        <td>Create eInvoice Static website</td>
+        <td>
+        <div style="width:300px;overflow:hidden; white-space:nowrap; text-overflow:ellipsis;" 
+        title="we need to create einvoice website where all invoice's information is available 
+        As per Rule 48(4) of CGST Rules, notified class of registered persons (whose aggregate turnover
+in any preceding financial year from 2017-18 onwards, is more than prescribed limit) have to
+prepare invoice by uploading specified particulars of invoice (in FORM GST INV-01) on Invoice
+Registration Portal (IRP) and obtain an Invoice Reference Number (IRN)">
+we need to create einvoice website where all invoice's information is available 
+            As per Rule 48(4) of CGST Rules, notified class of registered persons (whose aggregate turnover
+in any preceding financial year from 2017-18 onwards, is more than prescribed limit) have to
+prepare invoice by uploading specified particulars of invoice (in FORM GST INV-01) on Invoice
+Registration Portal (IRP) and obtain an Invoice Reference Number (IRN).
+</div>
+        </td>
+        <td>Nirmal Kumar, 
+            Officiating EVP & SVP(SD)
+            </td>
+        <td>Completed</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
