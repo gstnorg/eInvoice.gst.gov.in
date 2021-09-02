@@ -35,11 +35,7 @@ if(isset($_POST['subject']) && isset($_POST['message'])){
         $status = "Success";
         echo "Message has been sent";
     }
-//https://stackoverflow.com/questions/36351817/phpmailer-smtp-error-failed-to-connect-to-server
-//Links that fix the problem (you must be logged into google account):
-//https://security.google.com/settings/security/activity?hl=en&pli=1
-//https://www.google.com/settings/u/1/security/lesssecureapps
-//https://accounts.google.com/b/0/DisplayUnlockCaptcha
+
     
 exit(json_encode(array("status" => $status, "response" => $response)));
 }

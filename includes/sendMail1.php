@@ -22,10 +22,8 @@ if(inset($_POST['subject']) && inset($_POST['message'])){
 
     $mail->isHTML(true); 
     $mail->setFrom('varun.ncrmail@gmail.com', 'E-Invoice');
-    $mail->addAddress('varun.ncrmail@gmail.com', 'e-Invoice');     //Add a recipient
+    $mail->addAddress('varun.ncrmail@gmail.com', 'e-Invoice');
 
-    //Content
-                                 //Set email format to HTML
     $mail->Subject = ("$email ($subject)")
     $mail->Body    = ("$email ($message)")
 

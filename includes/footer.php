@@ -145,20 +145,17 @@
   <script src="./script/jquery.newsTicker.js"></script>
   <script src="./menu/jquery-accessibleMegaMenu.js"></script>
   <script src="./menu/main.js"></script>
-  <!-- <script src="https://www.google.com/recaptcha/api.js?render=6LefIDsbAAAAACCozqOInw-aXRK1jsoVgd8blcKb"></script> -->
 
   <script>
 var code;
 function createCaptcha() {
-  //clear the contents of captcha div first 
   document.getElementById('captcha').innerHTML = "";
   var charsArray =
   "0123456789&";
   var lengthOtp = 4;
   var captcha = [];
   for (var i = 0; i < lengthOtp; i++) {
-    //below code will not allow Repetition of Characters
-    var index = Math.floor(Math.random() * charsArray.length + 1); //get the next character from the array
+    var index = Math.floor(Math.random() * charsArray.length + 1);
     if (captcha.indexOf(charsArray[index]) == -1)
       captcha.push(charsArray[index]);
     else i--;
@@ -171,9 +168,8 @@ function createCaptcha() {
   var ctx = canv.getContext("2d");
   ctx.font = "24px Georgia";
   ctx.strokeText(captcha.join(""), 0, 30);
-  //storing captcha so that can validate you can save it somewhere else according to your specific requirements
   code = captcha.join("");
-  document.getElementById("captcha").appendChild(canv); // adds the canvas to the body element
+  document.getElementById("captcha").appendChild(canv);
 
 }
 function validateCaptcha() {
@@ -206,11 +202,9 @@ function validateCaptcha() {
   $('#myFormReport').hide();
   $('#myFormReporteThsnks').show();
   $("#submitData").hide();
-  $(".myFormReportsent").html('<div style="text-align: center;"> <img src="./../images/CLoading.gif"/></div><br>');
   
   
  
-  //if(isNotEmpty(subject) && isNotEmpty(message)){
     $.ajax({
       url: "sendMail.php",
       method: "POST",
@@ -221,7 +215,6 @@ function validateCaptcha() {
       },
       success: function(response){
         $("#myFormReport")[0].reset();
-        //alert(response)
         $(".myFormReportsent").text("Thank you for your feedback!");
       }
     })
@@ -235,13 +228,11 @@ $(function () {
   createCaptcha();
   $('#captchaInvalid').hide();
 
-  //  location.reload(true);
   $("#closepopup").click(function () {
     $('#myFormReport').show();
     $('#myFormReporteThsnks').hide();
     $("#submitData").show();
-    //$("#exampleModal").modal('hide');
-    //  location.reload(true);
+
   });
 });
   </script>
