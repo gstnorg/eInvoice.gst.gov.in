@@ -31,7 +31,7 @@
             <ul>
               <li><a target="_blank" href="https://www.cbic.gov.in/" class="inline">Central Board of Indirect Taxes &
                   Customs (CBIC)</a></li>
-              <li><a target="_blank" href="http://www.gstcouncil.gov.in/state-government-gst-website">State GST Websites
+              <li><a target="_blank" href="http://www.gstcouncil.gov.in/state-specific-gst">State GST Websites
                 </a></li>
               <li><a target="_blank" href="https://ewaybill.nic.in/">E-way Bill Portal</a></li>
               <li><a target="_blank" href="https://gstn.org.in/">GSTN</a></li>
@@ -202,6 +202,7 @@ function validateCaptcha() {
   $('#myFormReport').hide();
   $('#myFormReporteThsnks').show();
   $("#submitData").hide();
+  $(".myFormReportsent").html('<div style="text-align: center;"> <img src="./../images/CLoading.gif"/></div><br>');
   
   
  

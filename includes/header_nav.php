@@ -121,7 +121,7 @@
                     </li>
                     <li class="accessible-megamenu-panel-group">
                       <a target="_blank"
-                        href="./downloads/GST e-invoice Schema - Version 1.1 Dt. 30-7-2020 - Copy.xlsx">INV-01
+                        href="./downloads/schema INV-01.pdf">INV-01
                         (Schema)</a>
                     </li>
                   </ol>

@@ -158,12 +158,20 @@
         <div class="col-sm-5">
           <h4>What’s New</h4>
           <ul id="nt-example1">
-            <li>
-              <a href="view-all-updates.php">Registration and Login for taxpayers with TO Rs 50-100 Crores is
-                enabled.</a>
-              <span class="txt-date">16 Mar</span>
+          <li>
+              <a target="_blank" href="https://einvoice1.gst.gov.in/Others/BulkGenerationTools">Updated Version of GePP & Bulk Tools are released  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </a>
+              <span class="txt-date">22<sup>nd</sup> June</span>
             </li>
             <li>
+              <a target="_blank" href="https://einvoice1.gst.gov.in/Documents/releasenotes_einvweb.pdf">Enhancements in e-Invoice System. &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</a>
+              <span class="txt-date">16<sup>th</sup> Mar</span>
+            </li>
+            <li>
+              <a target="_black" href="https://einvoice1.gst.gov.in/Documents/GuidelinesforTaxpayerswithTORs.pdf">Registration and Login for taxpayers with TO Rs 50-100 Crores is
+                enabled.</a>
+              <span class="txt-date">16<sup>th</sup> Mar</span>
+            </li>
+            <!-- <li>
               <a href="view-all-updates.php">Rs. 50 Cr. + taxpayers to start e-invoicing from 01st April 2021 –
                 Notification Issued</a>
               <span class="txt-date">8 Mar</span>
@@ -171,7 +179,7 @@
             <li>
               <a href="view-all-updates.php">Updates in e-Invoice Portal.</a>
               <span class="txt-date">28 Jan</span>
-            </li>
+            </li> -->
         
           </ul>
           <a href="view-all-updates.php" class="view-more">earlier updates</a>
